@@ -19,3 +19,8 @@ alias portforwardredisstage='kubectl port-forward --namespace stage svc/bw-redis
 alias portforwardredisprod='kubectl port-forward --namespace bookaway svc/bw-w-master 8000:6379'
 alias copylastcommit='git log -1 --pretty=%H | pbcopy'
 alias delete-branches='git branch | grep -v "master" | xargs git branch -D'
+function runjob() {
+  temp_job_name=$1-$(date +%s)
+  kubectl create job --from=cronjobs/$1 $temp_job_name -n $2 &&
+    echo Delete Job: kubectl delete job $temp_job_name
+}
