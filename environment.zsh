@@ -6,4 +6,11 @@ export PAYMENT_PORT=3004
 export PAYMENT_DEBUG_PORT=4004
 export N_PREFIX=~/n
 export PATH=$N_PREFIX/bin:$PATH
-export PATH="$PATH:$HOME/.rvm/bin"
+
+PATH="$PATH:$HOME/.rvm/bin;"
+PATH="$PATH:/Users/lirancohen/bin"
+
+source /Users/lirancohen/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/lirancohen/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
