@@ -28,3 +28,7 @@ function runjob() {
 function openSpinnaker() {
   open "https://spinnaker.bookaway.com/#/applications/${1}/executions"
 }
+function killport(){
+  lsof -ti:$1 | xargs kill
+  echo "killed port ${1}"
+}
