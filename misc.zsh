@@ -20,6 +20,7 @@ alias deploy='git log -1 --pretty=%H | pbcopy && openSpinnaker $(basename $(pwd)
 alias delete-branches='git branch | grep -v "master" | xargs git branch -D'
 alias dockerinit='dockerkillall && dockerclean'
 alias spaceship='open https://github.com/denysdovhan/spaceship-prompt'
+alias cleardesktop='rm -rf  ~/Desktop/*'
 function runjob() {
   temp_job_name=$1-$(date +%s)
   kubectl create job --from=cronjobs/$1 $temp_job_name -n $2 &&
