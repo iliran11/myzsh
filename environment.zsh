@@ -12,5 +12,7 @@ PATH="$PATH:~/bin"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# source $(dirname $(gem which colorls))/tab_complete.sh
+
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down

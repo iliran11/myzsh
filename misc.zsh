@@ -21,6 +21,13 @@ alias delete-branches='git branch | grep -v "master" | xargs git branch -D'
 alias dockerinit='dockerkillall && dockerclean'
 alias spaceship='open https://github.com/denysdovhan/spaceship-prompt'
 alias cleardesktop='rm -rf  ~/Desktop/*'
+alias undolastcommit='git reset --soft HEAD~1'
+alias ll=colorls -1 -A --sd
+alias gm="pushd ~/Projects/git-dev-flow; ./gm.sh --include-ops; popd;"
+export K8S_PERSONAL_CONTEXT=gke_travelertick_europe-west2-a_developers-gke-cluster
+export K8S_PERSONAL_NAMESPACE=liran
+export K8S_PERSONAL_SUBDOMAIN=liran
+
 function runjob() {
   temp_job_name=$1-$(date +%s)
   kubectl create job --from=cronjobs/$1 $temp_job_name -n $2 &&
@@ -33,4 +40,13 @@ function killport() {
   echo $(lsof -ti:$1)
   lsof -ti:$1 | xargs kill
   echo "killed port ${1}"
+}
+
+function telep() {
+  PORT=3000 &&
+    DEPLOYMENT_NAME=$1 &&
+    echo $PORT &&
+    echo $1 &&
+    start telepresence &&
+    telepresence --swap-deployment $DEPLOYMENT_NAME --expose $PORT
 }
