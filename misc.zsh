@@ -1,7 +1,7 @@
 alias 1='cd ~/Projects/bookaway-platform/'
 alias bo='git branch --sort=-committerdate'
 alias z_edit='code  ~/.zshrc'
-alias z_source='source ~/.zshrc'
+alias zsource='source ~/.zshrc'
 alias z_copy_source='cat ~/.zshrc | pbcopy'
 alias h_browse='hub browse'
 alias hwatch='watch -g hub ci-status; say Done Circle CI'
@@ -45,8 +45,5 @@ function killport() {
 function telep() {
   PORT=3000 &&
     DEPLOYMENT_NAME=$1 &&
-    echo $PORT &&
-    echo $1 &&
-    start telepresence &&
     telepresence --swap-deployment $DEPLOYMENT_NAME --expose $PORT
 }
