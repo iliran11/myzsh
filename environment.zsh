@@ -8,7 +8,7 @@ export N_PREFIX=~/n
 export PATH=$N_PREFIX/bin:$PATH
 
 PATH="$PATH:$HOME/.rvm/bin;"
-PATH="$PATH:~/bin"
+PATH="$PATH:~/bin;"
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
