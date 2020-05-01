@@ -25,7 +25,14 @@ alias undolastcommit='git reset --soft HEAD~1'
 alias lll="colorls -1 -al --sd"
 alias ll="colorls -1 -A --sd"
 alias gm="pushd ~/Projects/bookaway-platform/git-dev-flow; ./gm.sh --include-ops; popd;"
-alias contactformftp='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/contact-form-build.sh'
+
+# FTP
+alias copycontactform='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/contact-form-build.sh'
+alias copymenuitem='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/copy-menu-item-with-icon.sh'
+alias copychildtheme='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/copy-child-theme.sh'
+alias ftpput='ncftpput  -R -v -u $USER -p $PASSWORD $HOST \'
+alias ftpopen='ncftp -u $USER -p $PASSWORD $HOST'
+
 export K8S_PERSONAL_CONTEXT=gke_travelertick_europe-west2-a_developers-gke-cluster
 export K8S_PERSONAL_NAMESPACE=liran
 export K8S_PERSONAL_SUBDOMAIN=liran
