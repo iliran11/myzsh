@@ -7,9 +7,9 @@ export PAYMENT_DEBUG_PORT=4004
 export N_PREFIX=~/n
 export PATH=$N_PREFIX/bin:$PATH
 
-export HOST='alexmedia.co.il'
-export USER='liran@alexmedia.co.il'
-export PASSWORD='pg*NS*&ZOg3%0#a'
+export WPHOST='alexmedia.co.il'
+export WPUSER='liran@alexmedia.co.il'
+export WPPASSWORD='pg*NS*&ZOg3%0#a'
 
 PATH="$PATH:$HOME/.rvm/bin;"
 PATH="$PATH:~/bin;"
