@@ -27,7 +27,6 @@ alias ll="colorls -1 -A --sd"
 alias gm="pushd ~/Projects/bookaway-platform/git-dev-flow; ./gm.sh --include-ops; popd;"
 
 # FTP
-alias copycontactform='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/contact-form-build.sh'
 alias copymenuitem='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/copy-menu-item-with-icon.sh'
 alias copychildtheme='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/copy-child-theme.sh'
 alias copychangeanchors='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/change-anchors.sh'
@@ -57,6 +56,6 @@ function telep() {
     DEPLOYMENT_NAME=$1 &&
     telepresence --swap-deployment $DEPLOYMENT_NAME --expose $PORT
 }
-function killdeployment {
+function deploydelete {
   kubectl delete deployment -n liran $1
 }
