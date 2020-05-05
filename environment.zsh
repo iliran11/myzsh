@@ -1,4 +1,4 @@
-export NPM_TOKEN="9beb0faf-94f0-41f1-b4e6-d94fa0cf22b7"
+export NPM_TOKEN="1f39f90f-ac21-4e0c-a99d-dc92de09329a"
 export BW_INSTALL_PATH="~/Projects/bookaway-platform"
 export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_credentials.json
 export NODE_ENV=development
