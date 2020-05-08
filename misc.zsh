@@ -28,8 +28,6 @@ alias gm="pushd ~/Projects/bookaway-platform/git-dev-flow; ./gm.sh --include-ops
 
 # FTP
 alias copymenuitem='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/copy-menu-item-with-icon.sh'
-alias copychildtheme='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/copy-child-theme.sh'
-alias copychangeanchors='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/change-anchors.sh'
 alias ftpput='ncftpput  -R -v -u $USER -p $PASSWORD $HOST \'
 alias ftpopen='ncftp -u $USER -p $PASSWORD $HOST'
 
