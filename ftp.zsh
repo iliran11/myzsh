@@ -1,4 +1,4 @@
-LOCAL_ALEX='~/Projects/personal/alexmedia-wordpress'
+LOCAL_ALEX='~/Projects/liran/personal/alexmedia-wordpress'
 REMOTE_ALEX_PLUGIN='/alexmedia.co.il/public_html/wp-content/plugins'
 REMOTE_CONTACT_FORM="$REMOTE_ALEX_PLUGIN/alexmedia-contact-form"
 REMOTE_THEMES="/alexmedia.co.il/public_html/wp-content/themes"
