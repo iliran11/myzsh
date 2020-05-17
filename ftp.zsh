@@ -14,7 +14,8 @@ function ftpcopydir() {
   ncftpput -R -u $WPUSER -p $WPPASSWORD $WPHOST $1 $2
 }
 
-alias ftpcontactform="ftpcopydir $REMOTE_CONTACT_FORM/widget $LOCAL_CONTACT_FORM/widget/build &&
+alias ftpcontactform="yarn --cwd $LOCAL_CONTACT_FORM/widget build &&
+ftpcopydir $REMOTE_CONTACT_FORM/widget $LOCAL_CONTACT_FORM/widget/build &&
 ftpcopydir $REMOTE_CONTACT_FORM $LOCAL_CONTACT_FORM/includes &&
 copyfiles $REMOTE_CONTACT_FORM "$LOCAL_CONTACT_FORM/alexmedia-contact-form.php"
 "
