@@ -25,7 +25,7 @@ alias undolastcommit='git reset --soft HEAD~1'
 alias lll="colorls -1 -al --sd"
 alias ll="colorls -1 -A --sd"
 alias gm="pushd ~/Projects/bookaway-platform/git-dev-flow; ./gm.sh --include-ops; popd;"
-
+alias coder='code -r .'
 # FTP
 alias copymenuitem='sh /Users/lirancohen/.oh-my-zsh/custom/scripts/copy-menu-item-with-icon.sh'
 alias ftpput='ncftpput  -R -v -u $USER -p $PASSWORD $HOST \'
@@ -54,6 +54,6 @@ function telep() {
     DEPLOYMENT_NAME=$1 &&
     telepresence --swap-deployment $DEPLOYMENT_NAME --expose $PORT
 }
-function deploydelete {
+function deploydelete() {
   kubectl delete deployment -n liran $1
 }
