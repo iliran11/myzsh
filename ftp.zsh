@@ -1,4 +1,5 @@
 LOCAL_ALEX='~/Projects/liran/personal/alexmedia-wordpress'
+
 REMOTE_ALEX_PLUGIN='/alexmedia.co.il/public_html/wp-content/plugins'
 REMOTE_CONTACT_FORM="$REMOTE_ALEX_PLUGIN/alexmedia-contact-form"
 REMOTE_THEMES="/alexmedia.co.il/public_html/wp-content/themes"
@@ -22,3 +23,4 @@ copyfiles $REMOTE_CONTACT_FORM "$LOCAL_CONTACT_FORM/alexmedia-contact-form.php"
 
 alias ftpchildtheme="ftpcopydir $REMOTE_THEMES $LOCAL_CHILD_THEME"
 alias ftpclientscripts="ftpcopydir $REMOTE_ALEX_PLUGIN $LOCAL_CLIENT_SCRIPTS"
+alias ftpheaderphp="ftpcopydir $REMOTE_THEMES/selfer/template-parts $LOCAL_ALEX/header"
